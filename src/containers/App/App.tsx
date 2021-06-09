@@ -8,6 +8,7 @@ export const App = () => {
         <main className="App">
             <HashRouter basename={process.env.PUBLIC_URL}>
                 <Route path="/" exact render={() => <Intro />} />
+                <Route path={["/register", "/login"]} />
             </HashRouter>
         </main>
     )
