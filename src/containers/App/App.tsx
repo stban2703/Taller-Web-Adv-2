@@ -1,11 +1,13 @@
 import React from 'react';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
+import { Intro } from '../Intro/Intro';
+import "./App.css";
 
 export const App = () => {
     return (
-        <main>
-            <HashRouter>
-                
+        <main className="App">
+            <HashRouter basename={process.env.PUBLIC_URL}>
+                <Route path="/" exact render={() => <Intro />} />
             </HashRouter>
         </main>
     )

@@ -1,0 +1,23 @@
+.Button {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    height: 70px;
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.Button:hover {
+    cursor: pointer;
+}
+
+.Button--primary {
+    background-color: #4ABCAD;
+}
+
+.Button--secondary {
+    background-color: #FC4A1A;
+}
