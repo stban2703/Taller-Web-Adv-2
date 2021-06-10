@@ -4,6 +4,7 @@ import { eyesOptions, furOptions, hatOptions, necklaceOptions, sceneOptions } fr
 import { ColorOptions } from '../ColorOptions/ColorOptions';
 import { EditSection } from '../EditSection/EditSection';
 import { OptionList } from '../OptionList/OptionList';
+import { Select } from '../Select/Select';
 import "./EditOptions.css";
 
 interface EditOptionsProps {
@@ -67,6 +68,12 @@ export const EditOptions: React.FC<EditOptionsProps> = ({ currentTab }) => {
                 currentTab === "hat" && 
                 <EditSection title="Hat color">
                     <ColorOptions colorList={hatColors} />
+                </EditSection>
+            }
+            {
+                currentTab === "scene" && 
+                <EditSection title="Filter">
+                    <Select catFilter="" />
                 </EditSection>
             }
         </section>

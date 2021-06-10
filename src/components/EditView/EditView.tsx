@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./EditView.css";
 
 interface EditViewProps {
 
@@ -6,7 +7,7 @@ interface EditViewProps {
 
 export const EditView: React.FC<EditViewProps> = ({}) => {
     return (
-        <section>
+        <section className="EditView">
             
         </section>
     )
