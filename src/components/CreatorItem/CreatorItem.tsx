@@ -5,14 +5,14 @@ import "./CreatorItem.css";
 interface CreatorItemProps {
     value: string;
     url: string;
-    checked: boolean;
+    currentTab: string;
     action: () => void;
 }
 
-export const CreatorItem: React.FC<CreatorItemProps> = ({ value, url, checked, action }) => {
+export const CreatorItem: React.FC<CreatorItemProps> = ({ value, url, currentTab, action }) => {
     const imageSrc = getImageSrcFromUrl(url);
     return (
-        <div className={`CreatorItem${checked ? " CreatorItem--selected" : ""}`} onClick={action}>
+        <div className={`CreatorItem${currentTab === value ? " CreatorItem--selected" : ""}`} onClick={action}>
             <img className="CreatorItem__image" src={imageSrc} alt={value} />
         </div>
     )
