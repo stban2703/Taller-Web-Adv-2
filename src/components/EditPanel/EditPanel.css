@@ -1,0 +1,10 @@
+.EditPanel {
+    background-color: rgb(28, 28, 39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 590px;
+    z-index: 1;
+}

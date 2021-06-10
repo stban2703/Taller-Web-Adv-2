@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CreatorNav } from '../../components/CreatorNav/CreatorNav';
+import { EditPanel } from '../../components/EditPanel/EditPanel';
 import "./Creator.css";
 
 interface CreatorProps {
@@ -16,7 +16,7 @@ export const Creator: React.FC<CreatorProps> = ({}) => {
 
     return (
         <article className="Creator">
-            <CreatorNav currentTab={currentTab} onChangeCurrentTab={handleCurrentTab} />
+            <EditPanel currentTab={currentTab} onChangeCurrentTab={handleCurrentTab} />
         </article>
     )
 }
