@@ -3,19 +3,15 @@ import { useHistory } from 'react-router';
 import { Button } from '../../components/Button/Button'
 import "./Intro.css";
 
-interface IntroProps {
-
-}
-
-export const Intro: React.FC<IntroProps> = ({}) => {
+export const Intro = () => {
 
     const history = useHistory();
 
-    const handleGoToLogin = () => {
-        history.push("/login")
+    const handleGoToCreator = () => {
+        history.push("/new-cat")
     }
 
-    const handleGoToRegister = () => {
+    const handleGoToCreatedCats = () => {
         history.push("/register")
     }
 
@@ -23,8 +19,8 @@ export const Intro: React.FC<IntroProps> = ({}) => {
         <article className="Intro">
             <h1 className="Intro__title" >Cat creator</h1>
             <section className="Intro__section">
-                <Button type="primary" action={handleGoToLogin} children={"Login"}></Button>
-                <Button type="secondary" action={handleGoToRegister} children={"Register"}></Button>
+                <Button type="primary" action={handleGoToCreator} children={"Create new"}></Button>
+                <Button type="secondary" action={handleGoToCreatedCats} children={"Created cats"}></Button>
             </section>
         </article>
     )
