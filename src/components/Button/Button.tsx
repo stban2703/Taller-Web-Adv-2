@@ -2,7 +2,7 @@ import React from 'react';
 import "./Button.css";
 
 interface ButtonProps {
-    type: "primary" | "secondary";
+    type: "primary" | "secondary" | "tertiary";
     action: () => void;
 }
 

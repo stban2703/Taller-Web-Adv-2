@@ -1,4 +1,5 @@
 import React from 'react';
+import { CreatorControl } from '../CreatorControl/CreatorControl';
 import { CreatorNav } from '../CreatorNav/CreatorNav';
 import { EditOptions } from '../EditOptions/EditOptions';
 import "./EditPanel.css"
@@ -13,6 +14,7 @@ export const EditPanel: React.FC<EditPanelProps> = ({ currentTab, onChangeCurren
         <section className="EditPanel">
             <CreatorNav currentTab={currentTab} onChangeCurrentTab={onChangeCurrentTab} />
             <EditOptions currentTab={currentTab} />
+            <CreatorControl />
         </section>
     )
 }
