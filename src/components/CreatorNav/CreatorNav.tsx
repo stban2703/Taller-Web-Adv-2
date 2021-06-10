@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CreatorItem } from '../CreatorItem/CreatorItem';
 import "./CreatorNav.css";
 

@@ -1,0 +1,32 @@
+.OptionItem {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #808183;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OptionItem:hover {
+    cursor: pointer;
+}
+
+.OptionItem__check {
+    display: inline;
+    z-index: 1;
+}
+
+.OptionItem__check--remove {
+    display: none;
+}
+
+.OptionItem__image {
+    max-width: none;
+    width: 100%;
+    position: absolute;
+}

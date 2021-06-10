@@ -3,10 +3,10 @@ import { EditPanel } from '../../components/EditPanel/EditPanel';
 import "./Creator.css";
 
 interface CreatorProps {
-
+    id?: string;
 }
 
-export const Creator: React.FC<CreatorProps> = ({}) => {
+export const Creator: React.FC<CreatorProps> = ({ id }) => {
 
     const [currentTab, setCurrentTab] = useState("fur");
 
