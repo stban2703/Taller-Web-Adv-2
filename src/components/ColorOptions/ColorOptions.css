@@ -1,0 +1,8 @@
+.ColorOptions {
+    align-self: flex-start;
+    width: 80% !important;
+}
+
+.ColorOptions div span div {
+    border: 1px solid gray;
+}

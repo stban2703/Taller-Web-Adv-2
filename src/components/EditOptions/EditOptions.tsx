@@ -1,5 +1,7 @@
 import React from 'react';
+import { eyesColors, furColors, hatColors, necklaceColors } from '../../containers/Creator/initialCreatorColor';
 import { eyesOptions, furOptions, hatOptions, necklaceOptions, sceneOptions } from '../../containers/Creator/initialCreatorOptions';
+import { ColorOptions } from '../ColorOptions/ColorOptions';
 import { EditSection } from '../EditSection/EditSection';
 import { OptionList } from '../OptionList/OptionList';
 import "./EditOptions.css";
@@ -40,6 +42,31 @@ export const EditOptions: React.FC<EditOptionsProps> = ({ currentTab }) => {
                 currentTab === "scene" && 
                 <EditSection title="Background">
                     <OptionList currentValue="" itemList={sceneOptions}/>
+                </EditSection>
+            }
+            
+            {
+                currentTab === "fur" && 
+                <EditSection title="Fur color">
+                    <ColorOptions colorList={furColors} />
+                </EditSection>
+            }
+            {
+                currentTab === "eyes" && 
+                <EditSection title="Eye color">
+                    <ColorOptions colorList={eyesColors} />
+                </EditSection>
+            }
+            {
+                currentTab === "necklace" && 
+                <EditSection title="Necklace color">
+                    <ColorOptions colorList={necklaceColors} />
+                </EditSection>
+            }
+            {
+                currentTab === "hat" && 
+                <EditSection title="Hat color">
+                    <ColorOptions colorList={hatColors} />
                 </EditSection>
             }
         </section>
