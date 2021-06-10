@@ -12,7 +12,7 @@ export const OptionItem: React.FC<OptionItemProps> = ({value, url, currentValue}
     const imageSrc = getImageSrcFromUrl(url);
     return (
         <div className="OptionItem">
-            <img className="OptionItem__image" src={imageSrc} />
+            <img className="OptionItem__image" src={imageSrc} alt="" />
             <img className={`OptionItem__check`} src={getImageSrcFromUrl("others/checked")} alt={"Checked"} />
         </div>
     )
